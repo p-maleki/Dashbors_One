@@ -1,0 +1,148 @@
+body
+{
+   background-color:  #f1f1f1;
+   overflow-x: hidden;
+}
+.nav-up
+{
+    background-color: black;
+}
+.nav-up>a, .nav-up>.menu-res{
+    color: white;
+}
+.menu-res
+{
+    font-size: 1.1em;
+    display: none;
+}
+html, body
+{
+    
+    height: 100%;
+    color: black;
+}
+.gray
+ {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0,0.5);
+    display: none;
+ }
+.gray-hover:hover
+{
+    color: #000!important;
+    background-color: #ccc !important;
+    cursor: pointer;
+}
+.gray-hover-table>tbody>tr:hover
+{
+    color: #000!important;
+    background-color: #ccc !important;   
+}
+.close-res
+{
+    background-color: #616161;
+    font-size: 1.2em;
+    display: none;
+}
+.black-hover:hover
+{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.menu-res-body
+{
+    animation: left-to-right 500ms;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: none;
+    max-width: inherit;
+    top: 48px;
+}
+@keyframes left-to-right
+{
+    from{left: -300px;}
+    to{left: 0px;}
+}
+@media screen and (max-width:768px)
+{
+    body{
+        font-size: 10px!important;
+    }
+    
+    .mright
+    {
+        margin-right: 0px!important;
+    }
+    .mrleft
+    {
+        margin-left: 16px!important;
+        margin-top: 10px!important;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    body
+    {
+        font-size: 12px!important;
+    }
+    
+    .menu-res{
+        display: block;
+    }
+    
+    .menu-res-body
+    {
+        left: -300px;
+        width: 300px!important;
+        display: none;
+    }
+    .alaki
+    {
+        display: none;
+    }
+    .close-res
+    {
+        display: block!important;
+    }
+    .scal
+{
+    transition:300ms;
+}
+}
+
+@media screen and (min-width: 992px)
+{
+    .gray
+    {
+        display: none!important;
+    }
+    .menu-res{
+        display: none!important;
+    }
+    .menu-res-body
+    {
+        left: 0px!important;
+        display: block!important;
+        width: 100%!important;
+    }
+    .close-res{
+        display: none !important;
+    }
+    .alaki
+    {
+        display: block!important;
+    }
+    .scal
+{
+    transition:300ms;
+}
+}
